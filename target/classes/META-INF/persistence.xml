@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="bancoGestaoDeEstoque" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>entidades.Produto</class>
+    <class>entidades.Marca</class>
+    <class>entidades.Categoria</class>
+    <class>entidades.ItemSaida</class>
+    <class>entidades.ItemEntrada</class>
+    <class>entidades.EstoqueSaida</class>
+    <class>entidades.EstoqueEntrada</class>
+    <class>entidades.Funcionario</class>
+    <class>entidades.CargoFuncionario</class>
+    <class>entidades.Cliente</class>
+    <class>entidades.Fornecedor</class>
+    <class>entidades.Endereco</class>
+    <class>entidades.Cidade</class>
+    <class>entidades.Estado</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/postgres"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="@Matheus74569"/>
+      <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
+    </properties>
+  </persistence-unit>
+</persistence>
